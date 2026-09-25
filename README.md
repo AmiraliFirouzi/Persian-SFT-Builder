@@ -121,5 +121,5 @@ The final dataset is composed of multiple upstream datasets with their own licen
 ## Links
 
 * **Dataset:** [Persian-SFT-102K](https://huggingface.co/datasets/amiralifirouzi/Persian-SFT-102K)
-* **Builder:** this repository
+* **Builder:** Amirali Firouzi
 
