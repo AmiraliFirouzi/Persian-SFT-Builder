@@ -27,20 +27,16 @@ Merge
 Quality checks
       ↓
 Publish
-      ↓
-Hugging Face
 ```
 
 Main stages:
 
 ```text
-inventory_* → select_* → merge_stage1 → qc_stage2
+select_* → merge_stage1 → qc_stage2
                                       ↓
                               patch_metadata
                                       ↓
                                    publish
-                                      ↓
-                                 upload_hf
 ```
 
 ### Quality Control
@@ -81,13 +77,11 @@ Selection scripts use a fixed `SEED=42`.
 To rebuild the dataset:
 
 ```text
-1. Run inventory scripts
-2. Run selection scripts
-3. Run merge_stage1
-4. Run qc_stage2
-5. Run patch_metadata
-6. Run publish
-7. Run upload_hf
+1. Run selection scripts
+2. Run merge_stage1
+3. Run qc_stage2
+4. Run patch_metadata
+5. Run publish
 ```
 
 The scripts are primarily designed for Colab/Kaggle-style execution.
@@ -102,9 +96,7 @@ The scripts are primarily designed for Colab/Kaggle-style execution.
 ├── qc_stage2.py
 ├── patch_metadata.py
 ├── publish.py
-├── upload_hf.py
 ├── SOURCES.md
-├── requirements.txt
 └── README.md
 ```
 
